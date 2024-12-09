@@ -14,10 +14,10 @@ import models.Automobile;
  */
 public interface IAutomobileDAO {
     public void insertAutomobile(Automobile automobile) throws Exception;
-    public void updateAutomobile(Automobile automobile);
-    public void deleteAutomobile(int id);
-    public Automobile readAutomobile (int id);
-    public List<Automobile> listAutomobiles ();
+    public void updateAutomobile(Automobile automobile) throws Exception;
+    public void deleteAutomobile(int id) throws Exception;
+    public Automobile readAutomobile(int id) throws Exception;
+    public List<Automobile> listAutomobiles() throws Exception;
     
     
 }

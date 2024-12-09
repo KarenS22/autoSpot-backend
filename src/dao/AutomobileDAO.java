@@ -24,23 +24,33 @@ public class AutomobileDAO implements IAutomobileDAO {
     }
 
     @Override
-    public void updateAutomobile(Automobile automobile) {
+    public void updateAutomobile(Automobile automobile) throws Exception {
+        try {
+            //metodo
+        } catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
+
+    @Override
+    public void deleteAutomobile(int id) throws Exception {
+        try {
+            //metodo
+        } catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
+
+    @Override
+    public Automobile readAutomobile(int id) throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public void deleteAutomobile(int id) {
+    public List<Automobile> listAutomobiles() throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    @Override
-    public Automobile readAutomobile(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 
-    @Override
-    public List<Automobile> listAutomobiles() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 
 }
